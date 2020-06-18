@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Card Hover</title>
+  <style>
+    .cards { display: flex; gap: 20px; padding: 20px; flex-wrap: wrap; }
+    .card { width: 250px; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: 0.3s; }
+    .card:hover { transform: translateY(-10px); box-shadow: 0 12px 20px rgba(0,0,0,0.2); }
+    .card img { width: 100%; height: 150px; object-fit: cover; }
+    .card-body { padding: 15px; }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;">Hover Cards</h1>
+  <div class="cards">
+    <div class="card"><img src="https://via.placeholder.com/250x150?text=Project+1" alt=""><div class="card-body"><h3>Project 1</h3><p>React App</p></div></div>
+    <div class="card"><img src="https://via.placeholder.com/250x150?text=Project+2" alt=""><div class="card-body"><h3>Project 2</h3><p>Arduino Bot</p></div></div>
+  </div>
+</body>
+</html>
